@@ -1,0 +1,116 @@
+/* PianoDarkTheme */
+.container {
+  max-width: calc(100vw - (10vw * 2));
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 5vw;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+header span {
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: #000;
+  position: relative;
+}
+
+header span:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: #000;
+}
+
+header span:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+.header-title {
+  text-transform: uppercase;
+}
+
+img {
+  height: 50px;
+}
+
+.generate-notes button {
+  width: fit-content;
+  background: #1A56DB;
+  padding: 0.5em 1em;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.set-of-notes {
+  font-size: 2em;
+  font-weight: bolder;
+
+}
+
+.PianoDarkTheme .ReactPiano__Key--accidental {
+  background: #025d7d;
+  border: 1px solid #888;
+}
+
+.PianoDarkTheme .ReactPiano__Key--natural {
+  background: #013243;
+  border: 1px solid #888;
+  margin-right: 0;
+}
+
+
+.PianoDarkTheme .ReactPiano__Key--active.ReactPiano__Key--accidental {
+  background: #fff;
+}
+
+.PianoDarkTheme .ReactPiano__Key--active.ReactPiano__Key--natural {
+  background: #0396ca;
+}
+
+.ReactPiano__Keyboard {
+  margin: 0 auto;
+}
+
+.ReactPiano__Key--natural {
+  background-color: #fff;
+}
+
+.ReactPiano__Key--accidental {
+  background: #000 !important;
+}
